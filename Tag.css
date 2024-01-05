@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden
+}
+
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 400px;
+    left: 500px;
+    border-radius: 50%;
+}
+
+#opponent{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+#blankRectangle{
+    width: 0px;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    margin-top: -20px;
+}
+
+.wall{
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    margin-top: -60px;
+}
+
+.sightLine{
+    width: 1px;
+    height: 1px;
+    background-color: red;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: -60px;
+    transform-origin: 0px 0px;
+}
+
+.thickLine{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: -60px;
+    transform-origin: 5px 0px;
+}
+
+
+
+
+/* ORDER OF DIVS IN THE HTML FILE DETERMINE THE POSITION OF OBJECTS. WALL WILL BE CHAR-HEIGHT BELOW 0 */
+
+/* For absolute the entire window is in consideration. This effects coordinates */
+
+/* link for making adding elements to game https://www.youtube.com/watch?v=gX3gSJ43f7I */
