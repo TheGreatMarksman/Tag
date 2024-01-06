@@ -260,7 +260,7 @@ function enemHittingChar(){
 
 function enemFindChar(){
     recordEnemMove();
-    //if(enemHittingChar()) endGame();
+    if(enemHittingChar()) endGame();
     if(charVisible()){
         //console.log("charVisible");
         if(wallHuntInfo.stepNumber != 0) wallHuntInfo.stepNumber = 0;
